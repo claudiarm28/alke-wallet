@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar dinero</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #a8edea;
+        }
+        .card {
+            margin-top: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h4 class="text-center">Enviar dinero</h4>
+
+        <form id="formEnvio">
+            <input type="text" class="form-control mb-2" placeholder="Destinatario" required>
+            <input type="number" class="form-control mb-2" placeholder="Monto" required>
+            <button class="btn btn-success btn-block">Enviar</button>
+        </form>
+
+        <a href="menu.html" class="btn btn-secondary btn-block mt-2">Volver</a>
+    </div>
+</div>
+
+<script>
+document.getElementById("formEnvio").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Dinero enviado correctamente");
+});
+</script>
+
+</body>
+</html>
