@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Depósito</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #a8edea;
+        }
+        .card {
+            margin-top: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card text-center">
+        <h4>Depositar dinero</h4>
+
+        <form id="formDeposito">
+            <input type="number" id="monto" class="form-control mb-3" placeholder="Monto" required>
+            <button class="btn btn-success btn-block">Depositar</button>
+        </form>
+
+        <a href="menu.html" class="btn btn-secondary btn-block mt-2">Volver</a>
+    </div>
+</div>
+
+<script>
+document.getElementById("formDeposito").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Depósito realizado correctamente");
+});
+</script>
+
+</body>
+</html>
